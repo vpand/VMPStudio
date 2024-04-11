@@ -22,8 +22,11 @@ It's free to be used as a lightweight IDA tool.
  * Script is based on [Python](https://www.python.org/);
 
  ```
-macOS user: use the Preference menu to configurate the remote machine instruction and register context sampling.
-Windows/Linux user: use the MainMenu/Options/Preference to configurate the remote machine instruction and register context sampling.
+macOS user: use the Preference menu to configurate the remote machine instruction 
+             and register context sampling.
+
+Windows/Linux user: use the MainMenu/Options/Preference to configurate the remote 
+             machine instruction and register context sampling.
 ```
 
 Sample Server:
@@ -32,6 +35,11 @@ Sample Server:
 ```
 scp VMPStudio/uvm-server.deb root@ip:/tmp/
 ssh root@ip dpkg -i --force-overwrite /tmp/uvm-server.deb
+```
+ * iOS user: an extra step to install injection framework [Textobot.deb](https://github.com/vpand/VMPStudio/blob/master/Textobot.deb) to iDevice
+```
+scp VMPStudio/Textobot.deb root@ip:/tmp/
+ssh root@ip dpkg -i --force-overwrite /tmp/Textobot.deb
 ```
  * Android user: push [uvm-server64](https://github.com/vpand/VMPStudio/tree/master/uvm-server64) to Android Device
 ```
